@@ -1,0 +1,178 @@
+@import '../../../config-scss/rem-calc';
+
+$padding: rem-calc(20);
+
+:host {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .pokemon {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: rem-calc(290);
+    height: rem-calc(157);
+    background-color: var(--white);
+    border-radius: 10px;
+    font-family: 'Roboto';
+    margin-bottom: $padding;
+
+    &__status {
+      padding: $padding 0 0 $padding;
+      width: rem-calc(270);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+
+      h2 {
+        font-style: italic;
+        font-weight: 900;
+        font-size: rem-calc(22);
+        line-height: rem-calc(26);
+        color: var(--primary-color);
+        text-align: center;
+        margin-bottom: rem-calc(10);
+        text-transform: capitalize;
+      }
+
+      &--bug {
+        background-color: #8bd674;
+        border-radius: 10px;
+      }
+      &--dark {
+        background-color: #6f6e78;
+        border-radius: 10px;
+
+      }
+      &--dragon {
+        background-color: #7383b9;
+        border-radius: 10px;
+
+      }
+      &--electric {
+        background-color: #f2cb55;
+        border-radius: 10px;
+
+      }
+      &--fairy {
+        background-color: #eba8c3;
+      border-radius: 10px;
+
+        border-radius: 10px;
+
+      }
+        &--fighting {
+        background-color: #eb4971;
+      border-radius: 10px;
+
+      }
+      &--fire {
+        background-color: #ffa756;
+        border-radius: 10px;
+
+      }
+      &--flying {
+        background-color: #83a2e3;
+        border-radius: 10px;
+
+      }
+      &--ghost {
+        background-color: #8571be;
+        border-radius: 10px;
+
+      }
+      &--grass {
+        background-color: #8bbe8a;
+        border-radius: 10px;
+
+      }
+      &--ground {
+        background-color: #f78551;
+        border-radius: 10px;
+
+      }
+      &--ice {
+        background-color: #91d8df;
+        border-radius: 10px;
+
+      }
+      &--normal {
+        background-color: #b5b9c4;
+        border-radius: 10px;
+
+      }
+      &--poison {
+        background-color: #9f6e97;
+        border-radius: 10px;
+
+      }
+      &--psychic {
+        background-color: #ff6568;
+        border-radius: 10px;
+
+      }
+      &--rock {
+        background-color: #d4c294;
+        border-radius: 10px;
+
+      }
+      &--steel {
+        background-color: #4c91b2;
+        border-radius: 10px;
+
+      }
+      &--water {
+        background-color: #58abf6;
+        border-radius: 10px;
+
+      }
+
+      &--types {
+          display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &--badge {
+        background-color: #EFEFEF;
+        border-radius: rem-calc(32);
+        height: rem-calc(16);
+        width: rem-calc(55);
+        color: var(--primary-color);
+        font-size: rem-calc(10);
+        font-weight: 400;
+        line-height: rem-calc(12);
+        margin-bottom: rem-calc(8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__image {
+      position: absolute;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: rem-calc(90);
+      width: rem-calc(110);
+
+      right: $padding;
+      bottom: $padding;
+
+      background: url('../../../assets/bg/background-list-pokemons.svg') no-repeat left;
+
+      img{
+        width: rem-calc(80);
+      }
+
+    }
+  }
+
+
+}

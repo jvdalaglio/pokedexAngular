@@ -1,0 +1,27 @@
+@import '../../../config-scss/rem-calc.scss';
+// @import '../../../config-scss/variables';
+
+:host {
+  form{
+    input {
+      background: url('../../../assets/icons/search.svg');
+      background-position: calc(rem-calc(570));
+      background-repeat: no-repeat;
+      width: rem-calc(600);
+      height: rem-calc(50);
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: rem-calc(10);
+      padding: rem-calc(20);
+      outline: none;
+      border: none;
+      margin-bottom: rem-calc(20);
+
+      &::placeholder {
+        font-size: 18px;
+        line-height: 21px;
+        color: var(--white);
+        font-weight: 100 !important;
+      }
+    }
+  }
+}
